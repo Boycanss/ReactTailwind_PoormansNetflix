@@ -4,14 +4,15 @@ import App from "./app";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Bookmark } from "./Pages/Bookmark";
 import { History } from "./Pages/History";
-import { Navbar } from "./Components/Navbar/Navbar";
+// import { Navbar } from "./Components/Navbar/Navbar";
 import { MovieDetail } from "./Pages/MovieDetail";
+import { Layout } from "./Components/Layout/Layout";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Navbar />}>
+      <Route path="/" element={<Layout />}>
         <Route index element={<App />} />
         <Route path="/bookmark" element={<Bookmark />} />
         <Route path="/history" element={<History />} />

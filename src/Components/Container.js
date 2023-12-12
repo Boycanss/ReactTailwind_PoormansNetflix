@@ -49,7 +49,7 @@ export default class Container extends Component {
   render() {
     const { data, genres } = this.state;
     return (
-      <ThemeWrapper isLoading={this.state.isLoading}>
+      <ThemeWrapper isLoading={this.state.isLoading} className="md:mb-10">
         {data.length > 0 && genres.length > 0 && (
           <div
             className="m-5 font-inter grid grid-cols-2 gap-4                          // <<< default screen. or < sm && > xl || below is for sm to xl

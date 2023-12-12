@@ -1,8 +1,8 @@
 import React from "react";
 import { NavContent } from "./NavContent";
-import { BtnMode } from "../Buttons/Btn_mode";
+import { BtnMode } from "../../Buttons/Btn_mode";
 import { Outlet } from "react-router-dom";
-import { ThemeWrapper } from "../Wrapper";
+import { ThemeWrapper } from "../../Wrapper";
 
 // const NavContent = ({Name, href}) => {
 //   const color = Name == "HOME" ? "text-blue-200" : "text-white";

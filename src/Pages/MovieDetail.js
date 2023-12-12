@@ -28,7 +28,6 @@ export const MovieDetail = (props) => {
   return (
     <ThemeWrapper isLoading={isLoading} className="p-5 md:p-10">
       {data && (
-        // <ThemeWrapper className="p-10">
         <div>
           <div className="md:h-20 w-full md:flex md:justify-between">
             <div>
@@ -75,7 +74,7 @@ export const MovieDetail = (props) => {
               </div>
             </div>
           </div>
-          <div className="h-[1200] md:h-[700] w-full grid grid-cols-1 md:grid-cols-3 grid-rows-3 md:grid-rows-1 gap-2">
+          <div className="h-auto md:h-[1000] w-full grid grid-cols-1 md:grid-cols-3 grid-rows-3 md:grid-rows-1 gap-2">
             <div className="col-span-1 relative aspect-[3/4] overflow-hidden mx-auto md:mx-0 p-2">
               <div
                 style={{
